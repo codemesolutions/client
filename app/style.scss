@@ -1,0 +1,335 @@
+
+
+
+
+$primary: #2b2161;
+$dark:#222;
+$darkLight: #333;
+$secondary: #141414;
+$muted: #666;
+
+$gray-300: #dee2e6 !default;
+
+$body-bg:                   #f7f7f7 !default;
+
+$text-muted:                $muted;
+
+$font-family-base:            'Poppins', sans-serif !default;
+
+$font-size-base:              0.9rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
+
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          600 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+
+$navbar-light-color:                $secondary !default;
+$navbar-light-hover-color:          rgba($secondary, .7) !default;
+$navbar-light-active-color:         rgba($secondary, .9) !default;
+
+$lightGradient: linear-gradient(#fff, #f5f5f5);
+$darkGradient: linear-gradient(#1b1b1b, #141414);
+
+
+$border-radius:               0 !default;
+$border-radius-lg:            0 !default;
+$border-radius-sm:            0 !default;
+
+
+$input-bg:                              #fff !default;
+$input-disabled-bg:                     #ccc !default;
+
+$input-color:                           #444 !default;
+$input-border-color:                    #ddd  !default;
+$input-focus-border-color:              #ddd !default;
+
+$table-color:                 #444 !default;
+$table-bg:                    #fff !default;
+$table-border-color:          #ddd !default;
+
+
+$pagination-color:                  $muted !default;
+$pagination-bg:                     #fff !default;
+$pagination-border-color:           #ddd !default;
+
+
+$pagination-hover-color:            $primary !default;
+$pagination-hover-bg:               #f7f7f7 !default;
+$pagination-hover-border-color:     #ddd !default;
+
+$pagination-active-color:           $secondary !default;
+$pagination-active-bg:              $primary !default;
+$pagination-active-border-color:    #ddd !default;
+
+$pagination-disabled-color:         #666 !default;
+$pagination-disabled-bg:            #f7f7f7 !default;
+$pagination-disabled-border-color:  #ddd !default;
+
+@import "~bootstrap/scss/bootstrap";
+
+
+
+
+html,body{
+    height: 100%;
+}
+
+.shadow-sharpe{
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12) !important;
+}
+
+.shadow-sharpe-2{
+    box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2), 0px 3px 4px 0px rgba(0,0,0,0.14), 0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+
+.bg-light-gradient{
+    background: $lightGradient;
+}
+
+.bg-dark-gradient{
+    background: $darkGradient;
+}
+
+.bg-highlight{
+    background: rgb(43, 33, 97, 0.07) !important;
+}
+
+.border-dark{
+    border: #0d0b1b 1px solid !important;
+}
+
+.border-bottom-dark{
+    border-bottom: #0d0b1b 1px solid !important;
+}
+
+.navbar{
+    height: 60px;
+    position: relative;
+    z-index:99;
+    
+}
+
+.bg-logo{
+    background: $primary !important;
+}
+
+.table th, .table td{
+    vertical-align: middle !important;
+
+
+}
+
+
+
+.table td{
+    padding: 1rem !important;
+    transition: background 0.5s;
+
+}
+
+.table th{
+    background: #fff;
+    border-bottom:none !important;
+    border-top:none !important;
+    padding: 0.75rem !important;
+    
+   
+}
+
+.table th:hover{
+    background: #f1f1f1;
+}
+
+th .btn-link{
+    color: $secondary !important;
+    font-weight: 700 !important;
+    padding:0 !important;
+}
+
+
+.modal-title{
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+}
+
+.pagination{
+    margin:0 !important;
+}
+
+.page-item.active .page-link{
+    background-color: #dee2e6 !important;
+    color: $secondary !important;
+    border-color: #dee2e6 !important;
+    border: 1px solid #dee2e6 !important;
+}
+
+
+
+
+.nav li.active, .nav li.active span{
+    color:$secondary !important;
+}
+
+.bg-img{
+    background: url("./images/work.jpg") 0 0 no-repeat;
+    background-size: cover;
+}
+
+
+ .dropdown-item.active, .dropdown-item:active{
+    background: #111 !important;
+    border-top: #000 1px solid !important;
+    border-bottom: #000 1px solid !important;
+    color: $primary !important;
+}
+
+.dropdown-header{
+    box-shadow:none;
+    outline:none;
+    cursor: default !important;
+}
+
+.dropdown-menu a i.active{
+    color: $primary !important;
+}
+
+.dropdown-menu a.active{
+    background: #f7f7f7 !important;
+    color: $primary !important;
+}
+
+.dropdown-menu a:hover{
+    background: #f7f7f7 !important;
+    color: $primary !important;
+}
+
+.dropdown-menu a:hover i{
+    color: $primary !important;
+}
+
+.row{
+    min-height: 1px;
+    transition: height 1s;
+}
+
+.row [class*='col-'] {
+    transition: all 0.5s ease-in;
+    animation: fadein 2s;
+}
+
+.panel:hover{
+    background: #f5f5f5 !important;
+}
+
+.custom-control-label::before, .custom-control-label::after{
+    top:0 !important
+}
+
+.pagination{
+    flex-wrap: wrap;
+}
+
+
+.border-top-thick{
+    border-top: $primary 5px solid !important;
+}
+
+.modal-content{
+    background-color: transparent !important;
+}
+
+.navbar .container{
+    justify-content: start;
+}
+
+
+
+input:-webkit-autofill,
+
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #515151;
+  -webkit-text-fill-color: #444;
+  box-shadow:  0 0 0px 1000px rgb(255, 255, 255) inset;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+
+  
+}
+
+input:-internal-autofill-selected{
+    background-image: inherit;
+}
+
+
+.element{
+    border: #ccc 1px dashed;
+}
+
+.element:hover{
+    border:#000 1px dashed;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+$primaryColor: $primary;
+$secondaryColor: #fff;
+$tertiaryColor: #fff;
+$quaternaryColor: #fff;
+
+
+
+
+@import "grapesjs/src/styles/scss/main.scss";
+
+.gjs-radio-item-label{
+    margin:0;
+}
+
+.gjs-block:hover{
+    border: #fff 1px solid;
+}
+
+.gjs-pn-btn{
+    border: $primary 1px solid;
+}
+
+.gjs-pn-btn:hover{
+    border: #fff 1px solid;
+}
+
+.gjs-pn-panel{
+    padding-left:1rem;
+    padding-right:1rem;
+}
+
+.gjs-pn-views-container, .gjs-pn-views{
+    width: 20%;
+}
+
+.gjs-cv-canvas{
+    top: 41px;
+    height: calc(100% - 41px)
+}
+
+.gjs-cv-canvas, .gjs-pn-commands{
+    width: 80%;
+}
+
+.gjs-pn-options{
+    right: 20%;
+}
+
+
